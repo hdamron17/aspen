@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="mulberry", # Replace with your own username
+    name="mulberry",
     version="0.0.1",
     author="Hunter Damron",
     author_email="hdamron1594@yahoo.com",
@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hdamron17/mulberry",
-    packages=setuptools.find_packages(),
+    packages=["mulberry"],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Programming Language :: Python :: 3",
@@ -21,4 +21,7 @@ setuptools.setup(
         "Topic :: Scientific/Engineering",
     ],
     python_requires=">=3.6",
+    install_requires=[
+        "numpy",
+    ],
 )
