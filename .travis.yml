@@ -11,3 +11,7 @@ install:
 script:
   - black --check mulberry
   - python -m unittest discover -s tests/
+jobs:
+  allow_failures:
+  - python: "3.9-dev"
+  - python: "nightly"
