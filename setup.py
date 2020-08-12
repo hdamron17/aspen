@@ -15,7 +15,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hdamron17/mulberry",
-    packages=["mulberry"],
+    packages=setuptools.find_packages(include=["mulberry.*"]),
     classifiers=[
         "Development Status :: 1 - Planning",
         "Programming Language :: Python :: 3",
