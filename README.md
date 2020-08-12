@@ -14,8 +14,18 @@ Another library [pytransform3d](https://pypi.org/project/pytransform3d/) also br
 functionality of TF2 to non-ROS users, but is still bound to some of the restrictions of TF2
 and so it cannot be optimized for mostly static trees.
 
+## Instalation
+Mulberry is available on [PyPi](https://pypi.org/project/mulberry/) so you can install it by `pip install mulberry`. To install from source, simply `pip install .` from within the project directory.
+
+## Testing
+All tests should be placed in the `tests/` directory using `unittest`.
+To run all tests, use `python -m unittest discover -s tests/`.
+
 ## Contributing
 This project is still in the very early stages, but any contributions would be appreciated.
 In addition to code/testing/documentation contributions, please let us know if there are
 any features which would make this tool more helpful. This will help direct the future
-of the project.s
+of the project.
+
+### Style
+This code is `black`ened so make sure to run `black mulberry` or your tests will fail.
