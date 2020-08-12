@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/hdamron17/mulberry.svg?branch=master)](https://travis-ci.com/hdamron17/mulberry)
+[![Documentation Status](https://readthedocs.org/projects/mulberry/badge/?version=latest)](https://mulberry.readthedocs.io/en/latest/?badge=latest)
 
 # mulberry
 Coordinate transformation tree with a focus on efficiency
