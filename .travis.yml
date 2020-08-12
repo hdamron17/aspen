@@ -15,3 +15,13 @@ jobs:
   allow_failures:
   - python: "3.9-dev"
   - python: "nightly"
+deploy:
+  provider: pypi
+  username: __token__
+  password:
+    secure: "cshMS8Te6HxkhpY3taIYMSBDF5Z+c1nAtwTqsHFC1ne8ZFNp6SHfE0gHM44SGpedpO9yujW6GpYA/51U9CRsFVA74xukXXG7TWCyfVGExuMZdjxwbFMGlmHn7eej3Z/3BF9sqa/BnBoa5RSIPgqJbnJkyyfMhnUHiH9hbeLgHaxBwd0Aq3BYpIHvK3iu2qk2UG7CNCAG42/7IzvZWWE0jO5EwEzhtPiM3Yo7b8NmyJIf+E8xAk1f5eyd798PIacth5lBAMo1uynZhiyEEfwwddAJ2zSzfuWYYalf7mhrpWR+tDU18jCdX4Rs/HRlh/bwIgFXoIb5rchFutB6eaTJZ5vFKZ2Lz0nOgA9XlmcSxkax+6sVBVPd6HYszUDP7JRGZBrXoVcYNQIEzDJQre4A1xHMhzjfmdI/4pzqpVP0GAZDVev6lASyVmRP4t82lcVnVvNTfXKUZGxcykheKmgh0nj887StLZZfcmKtpsL0oHcQe03nAq5czVn6WVTIV+Ym2EfIBvDh6GdBRcw7I1uDGvyhVp2n9bglRH6MWUjJHN6BZ7av+wmTkXE8T9fAqnuyxjCHtE6iUNmreB3/NGP1VcXlvZzDnR3umFXJ1BJODj6XUyXTDqKTRLZeCpJzOoijqY0CJLIOSk8UplLafWTeIxCJ0J+09VU8f9+YTMGbrIw="
+  on:
+    branch: master
+    tags: true
+  distributions: "sdist bdist_wheel"
+  skip_existing: true
