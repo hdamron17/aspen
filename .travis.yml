@@ -1,0 +1,17 @@
+language: python
+python:
+  - "3.6"
+  - "3.7"
+  - "3.8"
+  - "3.9-dev"
+  - "nightly"
+install:
+  - pip install -r requirements.txt
+  - pip install -r requirements-test.txt
+script:
+  - black --check mulberry
+  - python -m unittest discover -s tests/
+jobs:
+  allow_failures:
+  - python: "3.9-dev"
+  - python: "nightly"
