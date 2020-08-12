@@ -3,9 +3,12 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open("VERSION", "r") as fh:
+    version = fh.read().strip()
+
 setuptools.setup(
     name="mulberry",
-    version="0.0.1",
+    version=version,
     author="Hunter Damron",
     author_email="hdamron1594@yahoo.com",
     description="Coordinate transformation tree with a focus on efficiency",
