@@ -15,3 +15,5 @@ print(tree.getTransform("/base_link", "/cam_fl"))
 print(tree.getTransform("/cam_fl", "/base_link"))
 print(tree.getTransform("/cam_fl", "/cam_fr"))
 print(tree.getTransform("/cam_fr", "/cam_fl"))
+
+print(tree.outputDOT())
